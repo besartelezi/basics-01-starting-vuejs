@@ -6,6 +6,18 @@ const app = Vue.createApp({
             courseGoal: 'Finish the course and learn Vue!',
             vueLink: 'https://developer.mozilla.org/en-US/'
         };
+    }, 
+    //methods here are a reserved name
+    //this contains all the methods that can be called in the Vuejs application
+    methods: {
+        outputGoal() {
+            const randomNumber = Math.random();
+            if (randomNumber < 0.5) {
+                return 'Learn Vue!';
+            } else {
+                return 'Learn React!';
+            }
+        }
     }
 });
 
